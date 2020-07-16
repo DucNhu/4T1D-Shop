@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .toggle {
+            background-color: #c87f8a;
+            text-align: center;
+            padding-top: 5px;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            margin: auto;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+
+#grid{
+  color: white;
+  transition: 0.7s;
+}
+
+.menu {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  transform: scale(0);
+  border-radius: 50%;
+  border-style: double;
+  border-color: #c87f8a;
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+  transition: 0.7s;
+}
+
+a {
+  display: inline-block;
+  position: absolute;
+  font-size: 9px;
+  color: red;
+}
+
+a:nth-child(1){
+  top: 0px;
+  left: 17.5px;
+}
+
+a:nth-child(2){
+  top: 14px;
+  left: 30px;
+}
+
+a:nth-child(3){
+  top: 14px;
+  left: 5px;
+}
+
+a:nth-child(4){
+  top: 78px;
+  left: 42px;
+}
+
+a:nth-child(5){
+  top: 58px;
+  left: 10px;
+}
+
+a:nth-child(6){
+  top: 23px;
+  left: 12px;
+}
+
+a:hover {
+  color: #c87f8a;  
+
+}
+#none {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <!-- Menu trôi nổi -->
+    <div class="toggle" id="toggle" onclick="expand()">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" id="show" class="bi bi-arrows-angle-expand" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M1.5 10.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+            <path fill-rule="evenodd"
+                d="M6.354 9.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm8.5-8.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+            <path fill-rule="evenodd"
+                d="M10.036 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 1 1-1 0V2h-3.5a.5.5 0 0 1-.5-.5z" />
+        </svg>
+
+        <svg width="1em" height="1em" viewBox="0 0 16 16" id="none" class="bi bi-arrows-angle-contract" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M9.5 2.036a.5.5 0 0 1 .5.5v3.5h3.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5z" />
+            <path fill-rule="evenodd"
+                d="M14.354 1.646a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0zm-7.5 7.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0z" />
+            <path fill-rule="evenodd"
+                d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </div>
+    <div class="menu" id="menu">
+        <a href="#">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path fill-rule="evenodd"
+                    d="M4.646 8.354a.5.5 0 0 0 .708 0L8 5.707l2.646 2.647a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708z" />
+                <path fill-rule="evenodd" d="M8 11.5a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-1 0v5a.5.5 0 0 0 .5.5z" />
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-brightness-high-fill" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+                <path fill-rule="evenodd"
+                    d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
+                <path fill-rule="evenodd"
+                    d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+            </svg>
+        </a>
+        <!-- <a href="#">
+            <i class="fa fa-envelope"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-camera"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-bell"></i>
+        </a> -->
+    </div>
+    <!-- End Menu trôi nổi -->
+    <script>
+        var i = 0;
+        function expand() {
+            if (i == 0) {
+                document.getElementById("menu").style.transform = "scale(3)";
+                document.getElementById("show").style.display = "none";
+                document.getElementById("none").style.display = "block";
+                i = 1;
+            }
+            else {
+                document.getElementById("menu").style.transform = "scale(0)";
+                document.getElementById("show").style.display = "block";
+                document.getElementById("none").style.display = "none";
+                i = 0;
+            }
+        }
+    </script>
+</body>
+</html>

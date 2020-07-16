@@ -1,0 +1,47 @@
+
+footer .menu-slide {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+footer .toggle {
+  background-color: #c87f8a;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+footer .frame-cat {
+    overflow: hidden;
+    height: 210px;
+    width: 60px;
+
+}
+footer .menu {
+  height: 200px;
+  width: 80%;
+  margin-top: 210px;
+
+  float: left;
+  border-style: double;
+  border-color: rgba(61,175,254,1);
+  border-radius: 20px;
+
+ 
+  transition: all .5s;
+}
+
+footer .menu a {
+    font-size: 25px;
+    color: #64cdd4;
+    opacity: .7;
+}
+footer .menu a:hover {
+    opacity: 1;
+    font-size: 25px;
+    color: #1ce0ee;
+}
