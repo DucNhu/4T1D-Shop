@@ -63,6 +63,11 @@
     background: rgb(25,112,254);
     background: linear-gradient(180deg, rgba(25,112,254,1) 32%, rgba(61,175,254,1) 81%);
 }
+.btn-search:hover {
+    opacity: .7;
+    color: white;
+    
+}
     /* sub-menu */
     .sub-menu li{
         margin: 0px 5px;
