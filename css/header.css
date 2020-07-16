@@ -1,4 +1,26 @@
-#icon {
-    border-radius: 100%;
-    background: red
+.Promotion__box {background: #1D71AB}
+.Promotion__body {height: 28px}
+.Promotion__list-menu li {
+    margin-left: 25px;
+}
+.Promotion__list-menu li a{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 26px;
+    display: inline-flex;
+    letter-spacing: 0.5px;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Promotion__list-menu li img{
+    width: 18px; height: 18px
+}
+.Promotion__list-menu li i{
+    color: gold
+}
+.Promotion__list-menu li a:hover{
+    text-decoration: none;
 }

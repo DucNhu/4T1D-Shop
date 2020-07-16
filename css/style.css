@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+#icon {
+    border-radius: 100%;
+    background: red
+}
+ul {
+    list-style-type: none;
+}
