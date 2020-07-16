@@ -1,3 +1,4 @@
+/* Uu dai */
 .Promotion__box {background: #1D71AB}
 .Promotion__body {height: 28px}
 .Promotion__list-menu li {
@@ -23,4 +24,69 @@
 }
 .Promotion__list-menu li a:hover{
     text-decoration: none;
+}
+
+/* menu__middle */
+.header__middle-box {
+    background: rgb(25,112,254);
+    background: linear-gradient(180deg, rgba(25,112,254,1) 32%, rgba(61,175,254,1) 81%);
+}
+
+.header__middle-list-menu {
+    height:90px;
+    padding-top: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    align-items: center;
+    column-gap: 40px;
+}
+.header__middle-list-menu .icon {
+    width: 100%;height: 100%;
+}
+/* Form */
+.search-box { border-radius: 5px}
+.form-search {
+    height: 100%;
+}
+.form-search input {
+    margin-left: 20px;
+    outline: none;
+    border: none
+}
+.btn-search {
+    width: 10%;
+    margin: 5px;
+    color: white;
+    font-size: 24px;
+
+    background: rgb(25,112,254);
+    background: linear-gradient(180deg, rgba(25,112,254,1) 32%, rgba(61,175,254,1) 81%);
+}
+    /* sub-menu */
+    .sub-menu li{
+        margin: 0px 5px;
+    }
+    .sub-menu li a{
+        color: white;
+        font-size: .75rem;
+        font-weight: 300;
+        line-height: .875rem;
+    }
+    .sub-menu li a:hover{text-decoration: none;}
+/* Cart */
+.cart__desc {
+    position: absolute;
+    font-size: 16px;
+    padding: 1px 8px;
+
+    margin-left: 21.5px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1.3px solid #45B5FC;
+}
+
+.header__middle-list-menu li:first-child:last-child {margin-top: -12px;}
+.header__cart {
+    font-size: 30px;
 }
