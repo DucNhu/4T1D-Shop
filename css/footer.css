@@ -1,11 +1,12 @@
 
-/* Footer box1 */
+/* Footer top */
 .unset {
     all: unset
 }
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 20%);
+    column-gap: 20px;
 }
  .grid-3 {
     display: grid !important;
@@ -20,7 +21,7 @@
     margin-bottom: 1.25rem;
     margin-top: 2.5rem;
 }
-.footer .grid-item ul {
+.footer-top .grid-item ul {
     text-decoration: none;
     display: block;
     color: rgba(0,0,0,.54);
@@ -39,14 +40,14 @@
     padding: 18px 0px
 }
 /* end pay__icon */
-.footer a {
+.footer-top a {
     text-decoration: none;
     color: rgba(0,0,0,.54);
     font-size: .75rem;
     margin-bottom: .75rem;
     text-transform: capitalize;
 }
-.footer a:hover {
+.footer-top a:hover {
     text-decoration: none;
     color: rgba(3, 151, 250, 0.54);
     font-size: .75rem;
@@ -100,7 +101,9 @@
 }
 /* End dowload-box*/
 
-/* END footer box1 */
+/* END footer top */
+/* footer middle */
+/* End footer middle */
 
 /* Icon troi noi */
 footer .menu-slide {
