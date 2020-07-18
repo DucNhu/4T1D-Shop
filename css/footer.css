@@ -102,9 +102,40 @@
 /* End dowload-box*/
 
 /* END footer top */
+
 /* footer middle */
 /* End footer middle */
 
+/* footer-bottom */
+.footer-bottom__body a {opacity: 1;}
+.footer-bottom__body a .pay__icon {
+    width: 100px;
+    background-size: 630.8333333333334% 408.8888888888889%;
+    background-position: 100% 7.194244604316546%;
+}
+.footer-bottom__body a:nth-child(2) {margin: 0px 20px}
+.footer-bottom__body a:last-child .pay__icon {width: 40px;}
+.addr {
+    margin: 0;
+    line-height: 1.2;
+    margin-top: 8px;
+}
+/* footer-bottom__header */
+.footer-bottom__header {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom__header div a {
+    font-size: .75rem;
+    color: rgba(0,0,0,.54);
+}
+.footer-bottom__header div a:hover {
+    text-decoration: none;
+    font-size: .75rem;
+    color: rgba(0,0,0,.54);
+}
+/* END footer-bottom */
 /* Icon troi noi */
 footer .menu-slide {
     position: absolute;
