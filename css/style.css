@@ -3,10 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 #icon {
     border-radius: 100%;
     background: red
 }
+/* Thanh scrollbar */
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: linear-gradient(white); 
+    }
+    /* End scrollbar */
 ul {
     list-style-type: none;
 }

@@ -1,47 +1,134 @@
 
+/* Footer box1 */
+.unset {
+    all: unset
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+ .grid-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 33.3%);
+}
+
+.footer__title {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 700;
+    color: rgba(0,0,0,.54);
+    margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
+}
+.footer .grid-item ul {
+    text-decoration: none;
+    display: block;
+    color: rgba(0,0,0,.54);
+    list-style-type: none;
+    margin: 0 0 1.5625rem;
+    padding: 0px
+}
+
+/* pay__icon */
+.list_menu-pay li {
+    margin: 5px 0px;
+    height: 36px
+}
+.pay__icon {
+    background: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/ac3a8f576164d64b185ada4409e3d5d2.png);
+    padding: 18px 0px
+}
+/* end pay__icon */
+.footer a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+    font-size: .75rem;
+    margin-bottom: .75rem;
+    text-transform: capitalize;
+}
+.footer a:hover {
+    text-decoration: none;
+    color: rgba(3, 151, 250, 0.54);
+    font-size: .75rem;
+    font-weight: bold;
+}
+/* list_menu-about */
+.list_menu-about li {
+    margin: 5px 0px;
+}
+.list_menu-about li a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+    font-size: .75rem;
+    font-weight: bold
+}
+.list_menu-about li a::before {
+    color: black;
+    margin-right: 5px;
+    font-size: 16px;
+}
+.list_menu-about li:first-child a::before {
+    content: '\f09a';
+}
+.list_menu-about li:nth-child(2) a::before {
+    content: '\f16d';
+}
+.list_menu-about li:nth-child(3) a::before {
+    content: '\f081';
+}
+.list_menu-about li:nth-child(4) a::before {
+    content: '\f167';
+}
+
+.list_menu-about li:first-child:hover a::before {
+    color: #0779E9
+}
+.list_menu-about li:nth-child(2):hover a::before {
+    content: '\f16d';
+}
+.list_menu-about li:nth-child(3):hover a::before {
+    color: #1DA1F2
+}
+.list_menu-about li:nth-child(4):hover a::before {
+    color: #FF0101
+}
+/* End list_menu-about */
+
+/* dowload-box */
+.dowload-box__img, .dowload-box__link{
+    width: 86px; height: 86px
+}
+/* End dowload-box*/
+
+/* END footer box1 */
+
+/* Icon troi noi */
 footer .menu-slide {
     position: absolute;
-    top: 60%;
+    z-index: 3;
+    top: 75%;
     right: 5%;
 }
 footer .toggle {
-  background-color: #c87f8a;
+  background-color: #4aacc5;
   color: white;
   font-size: 30px;
   text-align: center;
 
-  height: 50px;
+  height: 47px;
+  transition: all 1s;
   width: 50px;
-  border-radius: 50%;
+  border-radius: 50px;
 }
 
-footer .frame-cat {
-    overflow: hidden;
-    height: 210px;
-    width: 60px;
-
-}
-footer .menu {
-  height: 200px;
-  width: 80%;
-  margin-top: 210px;
-
-  float: left;
-  border-style: double;
-  border-color: rgba(61,175,254,1);
-  border-radius: 20px;
-
- 
-  transition: all .5s;
-}
-
-footer .menu a {
+footer  a {
     font-size: 25px;
-    color: #64cdd4;
+    color: white;
     opacity: .7;
 }
-footer .menu a:hover {
+
+footer a:hover {
     opacity: 1;
     font-size: 25px;
-    color: #1ce0ee;
+    color: gray;
 }
