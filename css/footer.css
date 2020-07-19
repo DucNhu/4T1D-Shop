@@ -3,12 +3,12 @@
 .unset {
     all: unset
 }
-.grid {
+footer .grid {
     display: grid;
     grid-template-columns: repeat(5, 20%);
     column-gap: 20px;
 }
- .grid-3 {
+footer  .grid-3 {
     display: grid !important;
     grid-template-columns: repeat(3, 33.3%);
 }
@@ -104,6 +104,12 @@
 /* END footer top */
 
 /* footer middle */
+.float-right {font-size: .875rem;color: rgba(0,0,0,.54);}
+.float-right span {
+    border-right: .1px solid gray;
+    padding: 0px 10px
+}
+.float-right span:last-child {border: none}
 /* End footer middle */
 
 /* footer-bottom */
