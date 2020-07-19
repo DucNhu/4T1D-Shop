@@ -27,6 +27,7 @@
     background-color: white;
     margin-bottom: 20px;
 }
+
 .cart__body {
     background-color: white;
 }
@@ -161,14 +162,14 @@
         margin-top: 2.5rem;
         font-size: 1rem;
     }
-    .delete_product-body form {
+    .delete_product-body button {
         margin-top: 100px;
     }
-    .delete_product-body form button {
+    .delete_product-body  button {
         width: 50%;
         float: right;
     }
-    .delete_product-body form button:first-child {
+    .delete_product-body button:first-child {
         background-color: #ee4d2d;
         color: white;
         float: left;
