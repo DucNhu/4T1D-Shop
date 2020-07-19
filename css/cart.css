@@ -1,8 +1,11 @@
-#cart {
-    margin-top: -20px;
+main {
+    background-color: #F5F5F5;
 }
 /* Header */
-    
+#cart {
+    margin-top: -20px;
+    padding-top: 10px;
+}
 
 .header__middle-list-menu {
     height:90px;
@@ -55,6 +58,7 @@
 .cart__body .form__header div {font-size: .875rem; }
 .product-quantity, .product-money, .product-action {color: gray; text-align: center;}
 .product-name {padding-left: 2em;}
+/* END cart__header */
 /* product__body */
 .form__item {
     height: 96px;
@@ -151,7 +155,6 @@
     }
     /* delete_product */
     .delete_product-box {
-        
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,.4);
@@ -187,6 +190,38 @@
         background-color: #ee4d2d;
         color: white;
         float: left;
+    }
+/* form__footer */
+ .form__footer {
+     background-color: white;
+     padding: 20px;
+ }
+    /* pay__body */
+    .product_sum-desc {
+        font-size: 1rem;
+    }
+    .pay__money {
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        margin-left: .3125rem;
+        color: #ee4d2d;
+    }
+    .product_sum .product_sum-desc p:last-child::first-letter {
+        vertical-align: super !important;
+        font-size: 18px !important;
+    }
+    .product_sum-desc .money{
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        margin-left: .3125rem;
+        color: #ee4d2d;
+    }
+    .pay__button button {
+        width: 210px; height: 40px;
+        background-color: #ee4d2d;
+    }
+    .pay__button button a{
+        color: white;
     }
 /* end cart__body */
 /* footer */
