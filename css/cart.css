@@ -169,7 +169,8 @@
         width: 50%;
         float: right;
     }
-    .delete_product-body button:first-child {
+    dialog .delete_product-body .buttn {
+        
         background-color: #ee4d2d;
         color: white;
         float: left;
